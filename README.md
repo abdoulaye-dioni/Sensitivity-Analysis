@@ -1,18 +1,6 @@
 # mice_imp_extreme
 Analyse de sensibilité avec le module mice dans le cas ou les catégories externes sont manquantes.
 
----
-title: "mice catégorie extreme"
-author: "Abdoulaye Dioni"
-date: "`r Sys.Date()`"
-output: 
-  html_document: 
-    toc: yes
-    highlight: tango
-    theme: cerulean
----
-
-
 
 ```{r,message=FALSE, warning=FALSE}
 library(parallel)
