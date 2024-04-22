@@ -89,7 +89,7 @@ datas <- lapply(1:nsim, function(simulation) {
 
 
 
-## Missing Data on the Ordinal Variable (MNAR)
+## Missing Data on the extreme categories of Ordinal Variable (MNAR)
 
 The `simulate.mnar` function generates missing values that are not at random based on the values of a response variable and an ordinal variable. It introduces missing values in different proportions depending on whether the binary variable is 1 or 0. It uses subgroups defined by A and B to select which observations will be affected. In our case, we assume these are the extreme categories of the ordinal variable.
 
