@@ -61,7 +61,7 @@ simulation_no_hierachical <- function(n,length_x1, length_x2, formula_x1, formul
 
 ```{r}
 set.seed(10000)
-nsim <- 5
+nsim <- 1000
 n <- 2000
 
 length_x1 <- 5
@@ -134,7 +134,7 @@ The choice of the imputation method is as follows:
 
 
 ```{r}
-M = 5 # imputation number
+M = 15 # imputation number
 
 cl <- makeCluster(round(detectCores()/2)) 
 clusterExport(cl, c("datas", "M")) 
