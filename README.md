@@ -1,4 +1,14 @@
-title: Sensitivity analysis method in the presence of a missing not at random ordinal independent variable:case of extreme categories that are MNAR
+---
+title: 'Sensitivity analysis method in the presence of a missing not at random ordinal independent variable:case of extreme categories that are MNAR'
+author: "ABDOULAYE DIONI"
+date: "`r Sys.Date()`"
+output: 
+  html_document: 
+    toc: true
+    highlight: tango
+    theme: cerulean
+    number_sections: true
+---
 
 
 * "Imputation is a widely recognized method for addressing the problem of missing data. Among the packages used for such tasks in non-hierarchical contexts, `mice` holds a key position. However, when working with real data, comparing missing data under the MCAR (Missing Completely at Random) and MAR (Missing at Random) assumptions might not always accurately capture the true nature of the missing data mechanism. It is thus useful to consider the MNAR (Missing Not at Random) case using a sensitivity analysis approach to evaluate deviation from MAR, because in certain situations, the `mice` package can produce potentially biased estimates."
@@ -509,7 +519,7 @@ round(estisimule,2)
 
 ## MCAR Mechanism
 
-Logistic regression under MAR.
+Logistic regression under MCAR.
 
 
 ```{r}
@@ -544,6 +554,7 @@ round(estimcar,2)
 
 ## MAR Mechanism
 
+Logistic regression under MAR
 
 ```{r}
 calcul_mar <- function(data) {
