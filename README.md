@@ -1,28 +1,10 @@
----
-title: 'Sensitivity analysis method in the presence of a missing not at random ordinal independent variable:case of extreme categories that are MNAR'
-author: "ABDOULAYE DIONI"
-date: "`r Sys.Date()`"
-output: 
-  html_document: 
-    toc: true
-    highlight: tango
-    theme: cerulean
-    number_sections: true
----
-
-
 * "Imputation is a widely recognized method for addressing the problem of missing data. Among the packages used for such tasks in non-hierarchical contexts, `mice` holds a key position. However, when working with real data, comparing missing data under the MCAR (Missing Completely at Random) and MAR (Missing at Random) assumptions might not always accurately capture the true nature of the missing data mechanism. It is thus useful to consider the MNAR (Missing Not at Random) case using a sensitivity analysis approach to evaluate deviation from MAR, because in certain situations, the `mice` package can produce potentially biased estimates."
-
 
 * The objective is to develop a sensitivity analysis method for ordinal variables where certain overrepresented categories are potentially missing, with a possible dependence on the response variable.
 
-
 * The proposed method is based on an algorithm presented in the article titled "Sensitivity analysis method in the presence of a missing not at random ordinal independent variable."
 
-
 * The method should be used with caution, as it heavily relies on the assumption that certain specific (overrepresented) categories of an ordinal variable tend to be missing.
-
-
 
 
 ```{r}
