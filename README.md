@@ -125,9 +125,9 @@ datas <- lapply(datas, function(data) {
 
 
 
-# Multiple Imputation with the mice Module
+# Multiple Imputation with the mice package
 
-The choice of the imputation method is as follows:
+The choice of the  method is as follows:
 
 * `logreg (Logistic Regression)` for the binary variable y
 * `polr (Proportional Odds Model)` for the ordinal variable x1
