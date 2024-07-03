@@ -1,8 +1,8 @@
 **Our sensitivity analysis containes free step as (Leurent et al., 2018)**
 
 
-1. performing MI under MAR
+1. Performing MI under MAR
 
-2. modifying the imputed data to reflect plausible scenarios under MNAR
+2. Modifying the imputed data to reflect plausible scenarios under MNAR
 
-3. analyzing the modified data and combining the results according to Rubin’s rule (Little and Rubin, 2020).
+3. Analyzing the modified data and combining the results according to Rubin’s rule (Little and Rubin, 2020).
