@@ -1,4 +1,4 @@
-**Our sensitivity analysis containes Three step as (Leurent et al., 2018)**
+**Our sensitivity analysis containes three step as (Leurent et al., 2018)**
 
 1. Performing MI under MAR
 
