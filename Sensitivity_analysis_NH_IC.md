@@ -1,6 +1,5 @@
-**Sensitivity analysis when intermediate categories of an ordinal variable seem missing.**
-
-
+**Sensitivity analysis in Non-Hierarchical context when intermediate categories of an ordinal variable seem missing.**
+ _(Senitivity_analysis_NH_IC.md)_
 
 ```{r}
 #sink("No_hierachi_int.txt")
