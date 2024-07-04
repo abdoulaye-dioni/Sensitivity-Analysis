@@ -2,13 +2,9 @@
 
 Imputation is a popular method for dealing with missing data. The mice package is often used in non-hierarchical contexts for this purpose. However, when working with real data, comparing missing data under the MCAR (Missing Completely at Random) and MAR (Missing At Random) assumptions may not always provide an accurate representation of the true nature of the missing data mechanism. Therefore, it is helpful to consider the MNAR (Missing Not At Random) case using a sensitivity analysis approach to assess deviations from MAR. This is important because in certain situations, the mice package may produce estimates that are potentially biased -(see mice_bias.md)-. The objective is to develop a sensitivity analysis method for ordinal variables where certain overrepresented categories are potentially missing, with a possible dependence on the response variable. The proposed method is based on an algorithm presented in the article titled "Sensitivity analysis method in the presence of a missing not at random ordinal independent variable." The method should be used with caution, as it heavily relies on the assumption that certain specific (overrepresented) categories of an ordinal variable tend to be missing.
 
-```latex
-P(Y = 1|X) = \frac{\exp(X\beta)}{1 + \exp(X\beta)}
-
 
 ```{r}
 #sink("No_hierachical_ext.txt")
-
 ti <- Sys.time()
 ```
 
