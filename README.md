@@ -1,7 +1,7 @@
-**Our sensitivity analysis containes three step as (Leurent et al., 2018)**
+**Our sensitivity analysis containes three step**
 
 1. Performing MI under MAR
 
 2. Modifying the imputed data to reflect plausible scenarios under MNAR
 
-3. Analyzing the modified data and combining the results according to Rubin’s rule (Little and Rubin, 2020).
+3. Analyzing the modified data and combining the results according to Rubin’s rule.
