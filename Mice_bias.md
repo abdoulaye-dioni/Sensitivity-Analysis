@@ -1,6 +1,6 @@
 # sink("bias_29_04_2024.txt")
 
-Évaluation du biais de l'imputation sous MAR avec le package mice dans le contexte
+**Bias Evaluation of Imputation under MAR Using the MICE Package in Context**
 
 
 ```{r}
@@ -70,7 +70,7 @@ datas <- lapply(1:nsim, function(simulation) {
 
 
 
-## Données manquantes sur la variable ordinale (MNAR)
+## Missing Not At random on the Ordinal Variable (MNAR)
 
 
 ```{r}
@@ -104,7 +104,7 @@ datas <- lapply(datas, function(data) {
 
 
 
-# Imputation mutliple avec le module mice
+#  Mutliple Imputation using mice package
 
 
 ```{r}
@@ -141,7 +141,7 @@ mar_data <- lapply(1:nsim, function(s) {
 
 
 
-## Coefficients beta et intercepts zeta du modele de regression ordinale full data without missing data
+## Beta Coefficients and Zeta Intercepts of the Ordinal Regression Model with Full Data without Missing Data
 
 ```{r}
 ordinal_full <- function(data) {
@@ -160,7 +160,7 @@ results <- lapply(datas, ordinal_full)
 
 
 
-# Extraire les moyennes des coefficients beta et zeta
+# Extracting the Means of Beta Coefficients and Zeta Intercepts
 
 
 ```{r}
@@ -173,7 +173,7 @@ sd_full <- rowMeans(sapply(results, function(res) res$sd_beta_zeta))
 
 
 
-## Regression ordinale des données imputées sous MAR
+## Ordinal Regression of Data Imputed under MAR
 
 ```{r}
 ordinal_mar <- function(data,M, length_x1, seed = NULL) {
@@ -223,7 +223,7 @@ stopCluster(cl) # Arret du cluster
 
 
 
-### Coeficients issus du modele de regression ordinale ou X1 est MAR
+### Coefficients from the Ordinal Regression Model where X1 is MAR
 
 
 ```{r}
