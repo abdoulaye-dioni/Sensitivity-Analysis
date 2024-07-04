@@ -1,9 +1,8 @@
-# sink("bias_29_04_2024.txt")
-
 **Bias Evaluation of Imputation under MAR Using the MICE Package in Context**
 
 
 ```{r}
+# sink("bias_29_04_2024.txt")
 ti <- Sys.time()
 
 library(parallel)
