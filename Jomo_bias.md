@@ -1,5 +1,5 @@
-# Bias_jomo
-**Évaluation du biais de la regression ordinale avec les données imputées avec le package jomo**
+
+**Bias Evaluation of Imputation under MAR Using the jomo Package in hiechical Context**
 
 
 ```{r}
@@ -41,7 +41,7 @@ simulation_hierachical <- function(length_x1, length_x2, formula_x1, formula_y, 
 ```
 
 
-## Parametres 
+## Parameters 
 
 ```{r}
 set.seed(100)
@@ -83,7 +83,7 @@ datas <- lapply(1:nsim, function(simulation) {
 
 
 
-## Données manquantes sur la variable ordinale (MNAR)
+## Missing Not At Random on the variable ordinale
 
 
 ```{r}
@@ -183,7 +183,7 @@ mar_data <- lapply(1:nsim, function(s) {
 
 
 
-## Coefficients beta et intercepts zeta du modele de regression ordinale full data without missing data
+## Beta Coefficients and Zeta Intercepts of the Ordinal Regression Model with Full Data without Missing Data
 
 ```{r}
 ordinal_full <- function(data) {
@@ -203,7 +203,7 @@ results <- lapply(datas, ordinal_full)
 
 
 
-# Extraire les moyennes des coefficients beta et zeta
+# Extracting the Means of Beta Coefficients and Zeta Intercepts
 
 
 ```{r}
@@ -215,7 +215,7 @@ sd_full <- rowMeans(sapply(results, function(res) res$sd_beta_zeta))
 
 
 
-## Regression ordinale des données imputées sous MAR
+## Ordinal Regression of Data Imputed under MAR
 
 ```{r}
 ordinal_mar <- function(data,M, length_x1, seed = NULL) {
@@ -265,7 +265,7 @@ stopCluster(cl) # Arret du cluster
 
 
 
-### Coeficients issus du modele de regression ordinale ou X1 est MAR
+### Coefficients from the Ordinal Regression Model where X1 is MAR
 
 
 ```{r}
