@@ -458,9 +458,7 @@ coverage <- function(value, CI.low, CI.upper){
 ```
 
 
-
-The `full_mcar_mar` function performs statistical calculations to evaluate the estimates, their variance, their confidence intervals, and their coverage proportions. It is applicable in the case of simulated "full data," data imputed under "MAR," and modified "MNAR."
-
+The `full_mcar_mar` function performs statistical calculations to evaluate the estimates, their variance, their confidence intervals, and their coverage proportions. It is applicable in the case of simulated "full data", "MCAR context" and data imputed under "MAR".
 
 
 
